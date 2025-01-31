@@ -9,8 +9,8 @@ body{
 .full-white-color{
     color: #fff;
 }
-.semi-white-color{
-    color: #fff;
+.gray-color{
+    color: #A6AEBF;
 }
 
 /* header styles */
@@ -142,6 +142,49 @@ nav a{
     text-align: left;
 }
 
+/* Habits section styles */
+.habits-section{
+    background-color: #111111;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.habits-section-container{
+    max-width: 670px;
+    height: 120px;
+    margin: 0 auto;
+}
+.habits-section-title{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 230px;
+    height: 270px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.card img{
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.card-description{
+    font-size: .9rem;
+    margin-top: 5px;
+}
+
+
+
 /* media query */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
@@ -160,5 +203,15 @@ nav a{
     }
     .glass-background-one{
         margin-left: 150px;
+    }
+    .habits-section-container{
+        margin-bottom: 70px;
+    }
+    .card-container{
+        flex-direction: column;
+        margin: auto;
+    }
+    .card{
+        margin: 20px auto;
     }
 }
