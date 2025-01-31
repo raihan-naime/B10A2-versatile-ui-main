@@ -3,6 +3,7 @@ body{
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: #111111 ;
     color: #fff;
     margin: 0;
 }
@@ -16,9 +17,8 @@ body{
 /* header styles */
 header{
     /* border: 2px solid yellow; */
-    max-width: 100%;
+    max-width: 85%;
     max-height: 1500px;
-    background-color: #111111 ;
     margin: 0 auto;
 }
 nav{
@@ -146,7 +146,7 @@ nav a{
 .habits-section{
     background-color: #111111;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 .habits-section-container{
@@ -183,6 +183,32 @@ nav a{
     margin-top: 5px;
 }
 
+/* run section styles */
+.run-section{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 67%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+.run-section-column{
+    margin-top: 35px;
+    width: 445px;
+    height: 290px;
+}
+.run-section-title{
+    font-size: 3rem;
+    margin: 0;
+}
+.run-section-description{
+    font-size: .9rem;
+}
+.run-section img{
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
 
 
 /* media query */
@@ -207,11 +233,25 @@ nav a{
     .habits-section-container{
         margin-bottom: 70px;
     }
-    .card-container{
+    .card-container, .run-section{
         flex-direction: column;
         margin: auto;
     }
     .card{
         margin: 20px auto;
+    }
+    .run-section{
+        flex-direction: column;
+        margin: auto;
+    }
+    .run-section-column{
+        margin: 50px 10px;
+        width: 290px;
+    }
+    .run-section-title, .run-section-description{
+        width: 80%;
+    }
+    .run-section img{
+        margin-top: 50px;
     }
 }
