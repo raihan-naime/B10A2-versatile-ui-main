@@ -14,6 +14,21 @@ body{
 .gray-color{
     color: #A6AEBF;
 }
+.section-title{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.section-description{
+    font-size: .9rem;
+    margin-top: 5px;
+    color: #A6AEBF;
+}
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
 
 /* header styles */
 header{
@@ -239,10 +254,91 @@ nav a{
     border-radius: 5px;
 }
 
+/* Calculator section */
+.calculator-section{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* calculator table section
+.calculator-table-section{
+    background-color: #222222;
+}
+table, th, td{
+    border: 1px solid royalblue;
+    border-collapse: collapse;
+    font-size: .9rem;
+    color: #A6AEBF;
+}
+table caption, thead th, .calculator-section-title{
+    color: #fff;
+    font-weight: bold;
+}
+table caption{
+    font-size: 1.75rem;
+}
+.calculator-section-title{
+
+} */
+
+
+/* meet our team section */
+.meet-section{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 67%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.meet-section-img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.meet-section-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* footer section */
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: 50px auto;
+    text-align: left;
+}
+.footer-column li{
+    list-style: none;
+    color: #A6AEBF;
+    font-size: 1.5rem;
+}
+.footer-column h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+hr{
+    width: 67%;
+    margin: 10px auto;
+}
+.copyright{
+
+}
+
+
 /* media query */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-    nav, .header-banner{
+    nav,
+    .header-banner,
+    .footer-section
+    {
         flex-direction: column;
     }
     .nav-anchors{
@@ -295,5 +391,8 @@ nav a{
     }
     .training-section-title, .training-section-description{
         margin: 10px auto;
+    }
+    .meet-section-img-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
